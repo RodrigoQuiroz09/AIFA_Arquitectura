@@ -1,0 +1,29 @@
+.login_form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  min-width: 350px;
+}
+
+.container-no-img {
+  display: flex;
+}
+.text-input-icon {
+  display: flex;
+  align-items: flex-end;
+}
+.image-login {
+  width: 50%;
+}
+@media only screen and (max-width: 800px) {
+  .image-login {
+    display: none;
+  }
+  .container-no-img {
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: rgba(239, 237, 231, 255);
+  }
+}

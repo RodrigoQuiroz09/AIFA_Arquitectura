@@ -1,0 +1,156 @@
+.header-reserve {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  margin-bottom: 35px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.container-reserve {
+  display: grid;
+  grid-template-columns: 100%;
+  margin-left: 20px;
+  margin-top: 30px;
+  background: #fff;
+  width: 95%;
+  border-radius: 30px;
+
+  overflow: auto;
+}
+.container-reserve .header-reserve-card {
+  padding: 30px 10px 0px 40px;
+  font-size: 1.6rem;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.container-reserve .text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0px 50px 40px 50px;
+}
+
+.container-reserve .text .subtitle {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+.container-reserve .text .info {
+  font-size: 1.4rem;
+  font-weight: bold;
+  padding-left: 1px;
+}
+
+.container-reserve .text .hora {
+  font-size: 1.4rem;
+  font-weight: bold;
+  padding-left: 1px;
+}
+
+.container-map {
+  margin-left: 20px;
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 60% 34.5%;
+  column-gap: 30px;
+  height: 450px;
+}
+.container-map .croquis {
+  background: #fff;
+  width: 100%;
+  border-radius: 30px;
+  overflow: auto;
+}
+.container-map .croquis .header-croquis {
+  padding: 35px 10px 0px 45px;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.container-map .croquis img {
+  margin-bottom: 10px;
+  margin-left: 50px;
+}
+.container-map .info {
+  background: #fff;
+  width: 100%;
+  border-radius: 30px;
+  overflow: auto;
+}
+.container-map .info .header-info {
+  padding: 30px 10px 0px 35px;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.container-map .info .subtitle {
+  padding-left: 60px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.container-map .info .desc {
+  padding-left: 60px;
+  margin-right: 80px;
+  font-size: 1.1rem;
+}
+
+@media only screen and (max-width: 1500px) {
+  .container-map {
+    grid-template-columns: 96.5%;
+  }
+  .container-map .croquis {
+    margin-bottom: 20px;
+  }
+  .container-map .info .desc {
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .container-reserve .header-reserve-card {
+    padding: 30px 10px 0px 40px;
+    font-size: 1.4rem;
+  }
+  .container-reserve .text .subtitle {
+    font-size: 1.1rem;
+  }
+
+  .container-reserve .text .info {
+    font-size: 1.2rem;
+    padding-left: 1px;
+  }
+  .container-reserve .text .hora {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .container-reserve .text {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .container-reserve .text .subtitle {
+    margin-bottom: 10px;
+  }
+  .container-reserve .text .info {
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .container-reserve .text {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .container-reserve .text .hora {
+    margin-bottom: 10px;
+  }
+  .header-reserve {
+    width: 100%;
+  }
+  .container-reserve {
+    margin-left: 0px;
+  }
+  .container-map {
+    margin-left: 0px;
+  }
+}

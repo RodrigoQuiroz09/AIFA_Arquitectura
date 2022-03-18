@@ -1,0 +1,13 @@
+.title-inventory {
+  font-size: 1.8rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom: 20px;
+}
+.container-inventory {
+  background: #fff;
+  width: 100%;
+  height: calc(100vh - 244px);
+  border-radius: 30px;
+  padding: 32px;
+  overflow: auto;
+}

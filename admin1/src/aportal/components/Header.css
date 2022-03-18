@@ -1,0 +1,42 @@
+.header-admin header {
+  background: rgba(239, 237, 231, 255);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  left: 0;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+.header-admin header .imagen img {
+  width: 355px;
+  height: 60px;
+}
+
+.header-admin header .logout {
+  cursor: pointer;
+}
+
+.admin main {
+  margin-top: 87px;
+  padding: 2rem 1.5rem;
+  background: rgb(224, 218, 185);
+  min-height: calc(100vh - 90px);
+}
+
+@media only screen and (max-width: 900px) {
+  .header-admin header .imagen img {
+    width: 300px;
+    height: 50px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .header-admin header .imagen img {
+    width: 250px;
+    height: 45px;
+  }
+}

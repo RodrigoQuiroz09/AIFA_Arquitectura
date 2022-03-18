@@ -1,0 +1,33 @@
+.header header {
+  background: var(--background-white);
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  left: 0;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+
+.header header > div {
+  padding-left: 1rem;
+}
+
+.header header > div > img {
+  cursor: pointer;
+}
+
+.main main {
+  margin-top: 87px;
+  padding: 2rem 1.5rem;
+  background: #ebebeb;
+  min-height: calc(100vh - 90px);
+}
+
+.header .user-wrapper {
+  display: flex;
+  align-items: center;
+  margin-right: 1.5rem;
+}
