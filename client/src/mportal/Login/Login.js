@@ -10,7 +10,7 @@ import { wt_decode } from '../../utils';
 
 import {setSession} from '../../actions'
 import {connect} from 'react-redux'
-
+//http://100.26.41.90:5000
 
 import './Login.css'
 
@@ -21,7 +21,7 @@ const Login =(props)=>{
 
     async function loginUser(event){
         event.preventDefault()
-        const response = await fetch('http://localhost:1337/api/login',{
+        const response = await fetch('http://100.26.41.90:5000/api/login',{
             method:'POST',
  
         headers:{
@@ -50,7 +50,7 @@ const Login =(props)=>{
             }
 
         } else{
-            alert('Please check your name and password')
+            alert('Please check your email or password')
         }
         
     }

@@ -1,14 +1,35 @@
 /* eslint-disable no-unused-expressions */
 /* eslint-disable react-hooks/exhaustive-deps */
-import React,{useEffect} from 'react'
+import React,{useEffect,useState} from 'react'
 import {connect} from 'react-redux'
 import { DataGrid } from '@mui/x-data-grid';
 import './Inventory.css'
 import {fetchInventory} from '../../actions'
-const Inventory =({hist,session})=>{
+
+const Inventory =({hist,session,fetchInventory})=>{
+    
+  const [rows,SetRows]=useState([]);
+
     useEffect(()=>{
-        fetchInventory(session.name)
+
+        var res = fetchInventory(session.name)
+        
+        if (hist.length === 0)
+        {
+        res.then(value=>{
+          SetRows(value.inv.map((item)=>{
+            return item.estatus === 0 ? {...item, estatus:'En Evaluación'} : item.estatus === 1 ? 
+            {...item, estatus:'Aceptado'} : {...item, estatus:'Denegado'} }));
+        })
+        }else 
+        {
+          SetRows(hist.inv.map((item)=>{
+            return item.estatus === 0 ? {...item, estatus:'En Evaluación'} : item.estatus === 1 ? 
+            {...item, estatus:'Aceptado'} : {...item, estatus:'Denegado'} }))
+        }
+
     },[])
+
 
     const columns = [
         { field: 'id', headerName: 'ID', minWidth: 90, flex:0.3 },
@@ -46,14 +67,9 @@ const Inventory =({hist,session})=>{
             editable: false,
           },
       ];
-      
-
-      const rows = hist.inv.map((item)=>{return item.estatus === 0 ? {...item, estatus:'En Evaluación'} : item.estatus === 1 ? {...item, estatus:'Aceptado'} : {...item, estatus:'Denegado'} })
    
     return(
       <div className='main'>
-
-      
         <main>
             <div className='title-inventory'>
                 Histórico de Reservaciones

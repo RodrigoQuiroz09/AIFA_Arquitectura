@@ -95,6 +95,16 @@ const Peticiones =({table,session,fetchALLInventory,denyPetitionUnique,denyPetit
     }
 
     setTimeout(() => {fetchALLInventory(); fetchPuertas();}, 1000);
+
+    const correo={
+      name:search.aereolinea,
+      email:search.email,
+      fecha:search.fecha,
+      hora:search.hora,
+      puerta:search.puerta,
+      estado:"RECHAZADA"
+    }
+    emailjs.send('service_x5nvo66', 'template_e3avkhs', correo, 'Glrk6bQ9dCXFilPUo').then(response=>{})
     
   }
 
@@ -119,16 +129,16 @@ const Peticiones =({table,session,fetchALLInventory,denyPetitionUnique,denyPetit
       acceptPetitionUnique(id,temp)
     }
     setTimeout(() => {fetchALLInventory(); fetchPuertas();}, 1000);
-    console.log(search.email);
+
     const correo={
       name:search.aereolinea,
       email:search.email,
       fecha:search.fecha,
       hora:search.hora,
-      puerta:search.puerta
-
+      puerta:search.puerta,
+      estado:"APROBADA"
     }
-    //emailjs.send('service_aifa', 'template_5856e2m', correo, 'eZMxwT9HTMtKN-pXJ').then(response=>{})
+    emailjs.send('service_x5nvo66', 'template_e3avkhs', correo, 'Glrk6bQ9dCXFilPUo').then(response=>{})
   }
 
   const columns = [

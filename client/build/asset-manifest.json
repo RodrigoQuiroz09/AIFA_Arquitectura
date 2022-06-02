@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2df49ce8.css",
+    "main.js": "/static/js/main.a7261d86.js",
+    "static/media/Puerta_Afuera.png": "/static/media/Puerta_Afuera.673544207afc1ec75495.png",
+    "static/media/Puerta_12.png": "/static/media/Puerta_12.13e78307b36733487105.png",
+    "static/media/Puerta_13.png": "/static/media/Puerta_13.31c94c5ee84e568ca89e.png",
+    "static/media/Puerta_14.png": "/static/media/Puerta_14.5e1a5da01325df05accc.png",
+    "static/media/Puerta_11.png": "/static/media/Puerta_11.5d5e8e429f448c71eb9c.png",
+    "static/media/Puerta_10.png": "/static/media/Puerta_10.7fa94d0532b8102a3d20.png",
+    "static/media/Puerta_2.png": "/static/media/Puerta_2.5f79ce92b7dd0bfb909a.png",
+    "static/media/Puerta_9.png": "/static/media/Puerta_9.484bd96ee1a4f3849781.png",
+    "static/media/Puerta_6.png": "/static/media/Puerta_6.89efdb9ae37867b81b39.png",
+    "static/media/Puerta_7.png": "/static/media/Puerta_7.3d7d841034a0641b710f.png",
+    "static/media/Puerta_4.png": "/static/media/Puerta_4.f95c582a5163dea40e84.png",
+    "static/media/Puerta_5.png": "/static/media/Puerta_5.af07eecb1524df32eb47.png",
+    "static/media/Puerta_1.png": "/static/media/Puerta_1.bf43837235da33cab4c3.png",
+    "static/media/Puerta_8.png": "/static/media/Puerta_8.5c1d72d2344cf4bf261e.png",
+    "static/media/Puerta_3.png": "/static/media/Puerta_3.51dc7a3bdf7bd523adc3.png",
+    "index.html": "/index.html",
+    "main.2df49ce8.css.map": "/static/css/main.2df49ce8.css.map",
+    "main.a7261d86.js.map": "/static/js/main.a7261d86.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2df49ce8.css",
+    "static/js/main.a7261d86.js"
+  ]
+}

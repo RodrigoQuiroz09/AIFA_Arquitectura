@@ -16,7 +16,7 @@ export const logOut = (tipo)=>{
 
 export const fetchPuertas= () => async dispatch =>{
        
-        const response = await fetch('http://localhost:1337/api/door',{
+        const response = await fetch('http://100.26.41.90:5000/api/door',{
             method:'GET',
             headers:{
                 'Content-Type':'application/json'
@@ -30,7 +30,7 @@ export const fetchPuertas= () => async dispatch =>{
 
 
 export const fetchALLInventory = () => async dispatch =>{
-    const response = await fetch('http://localhost:1337/api/getAll',{
+    const response = await fetch('http://100.26.41.90:5000/api/getAll',{
         method:'GET',
         headers:{
             'Content-Type':'application/json'
@@ -41,7 +41,7 @@ export const fetchALLInventory = () => async dispatch =>{
 
 
 export const denyPetitionUnique = (id,search) => async dispatch =>{
-    await fetch('http://localhost:1337/api/denyUnique',{
+    await fetch('http://100.26.41.90:5000/api/denyUnique',{
         method:'POST',
         headers:{
             'Content-Type':'application/json'
@@ -55,7 +55,7 @@ export const denyPetitionUnique = (id,search) => async dispatch =>{
     dispatch({ type:'DENY_UNIQUE',payload:{id}})
 }
 export const denyPetition = (id) => async dispatch =>{
-    await fetch('http://localhost:1337/api/deny',{
+    await fetch('http://100.26.41.90:5000/api/deny',{
         method:'POST',
         headers:{
             'Content-Type':'application/json'
@@ -69,7 +69,7 @@ export const denyPetition = (id) => async dispatch =>{
 
 export const acceptPetitionUnique = (id,search) => async dispatch =>{
 
-    await fetch('http://localhost:1337/api/acceptUnique',{
+    await fetch('http://100.26.41.90:5000/api/acceptUnique',{
         method:'POST',
         headers:{
             'Content-Type':'application/json'
@@ -83,7 +83,7 @@ export const acceptPetitionUnique = (id,search) => async dispatch =>{
 }
 
 export const acceptPetition = (id,search,auxId) => async dispatch =>{
-    await fetch('http://localhost:1337/api/accept',{
+    await fetch('http://100.26.41.90:5000/api/accept',{
         method:'POST',
         headers:{
             'Content-Type':'application/json'
@@ -98,7 +98,7 @@ export const acceptPetition = (id,search,auxId) => async dispatch =>{
 }
 
 export const blockGate = (search) => async dispatch =>{
-    await fetch('http://localhost:1337/api/blocks',{
+    await fetch('http://100.26.41.90:5000/api/blocks',{
         method:'POST',
         headers:{
             'Content-Type':'application/json'

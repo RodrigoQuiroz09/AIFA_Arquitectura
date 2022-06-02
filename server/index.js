@@ -7,13 +7,39 @@ const Door= require('./models/testpuerta.model.js')
 const Hist =require('./models/hist.model.js')
 const jwt = require('jsonwebtoken')
 const bcrypt = require('bcryptjs')
-app.use(cors())
+require('dotenv').config();
+
+const config = {
+    application: {
+        cors: {
+            server: [
+                {
+                    origin: "100.26.41.90:3000", //servidor que deseas que consuma o (*) en caso que sea acceso libre
+                    credentials: true
+                }
+        ]
+        }
+    }
+}
+
+app.use(cors(
+    config.application.cors.server
+  ));
+app.use((req, res, next) => {
+    res.header('Access-Control-Allow-Origin', '*');
+    res.header('Access-Control-Allow-Headers', 'Authorization, X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Allow-Request-Method');
+    res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, DELETE');
+    res.header('Allow', 'GET, POST, OPTIONS, PUT, DELETE');
+    next();
+});
 app.use(express.json())
 
-mongoose.connect('mongodb+srv://Quiroz:NsPSsHr9f3MPv6Uh@aifa.benob.mongodb.net/AIFA_DB?retryWrites=true&w=majority')
+mongoose.connect(process.env.mongoURI)
+.then(() => console.log('MongoDB Connected...'))
+.catch(err => console.error(err));
 
 app.post('/api/register', async(req,res) =>{
-    res.set('Access-Control-Allow-Origin', 'http://localhost:3000');
+    res.set('Access-Control-Allow-Origin', 'http://100.26.41.90:3000');
     
     try {
         const newPassword= await bcrypt.hash(req.body.pass,10)
@@ -262,6 +288,6 @@ app.post('/api/blocks',async(req,res)=>{
     }
 })
 
-app.listen(1337,()=>{
+app.listen(5000,()=>{
     console.log("Server started")
 })

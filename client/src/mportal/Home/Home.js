@@ -113,7 +113,6 @@ const mapStateToProps = state=>{
     return {
         door:state.door,
         session:state.session,
-        hist:state.hist
     }
 }
 export default connect(mapStateToProps,{logOut,fetchPuertas,fetchInventory})(Home)
