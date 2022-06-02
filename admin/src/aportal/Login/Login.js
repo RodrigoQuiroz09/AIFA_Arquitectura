@@ -21,7 +21,7 @@ const Login =(props)=>{
 
     async function loginUser(event){
         event.preventDefault()
-        const response = await fetch('http://100.26.41.90:5000/api/login',{
+        const response = await fetch('http://localhost:5000/api/login',{
             method:'POST',
  
         headers:{

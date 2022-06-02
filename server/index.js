@@ -14,7 +14,7 @@ const config = {
         cors: {
             server: [
                 {
-                    origin: "100.26.41.90:3000", //servidor que deseas que consuma o (*) en caso que sea acceso libre
+                    origin: "localhost:3000", //servidor que deseas que consuma o (*) en caso que sea acceso libre
                     credentials: true
                 }
         ]
@@ -39,7 +39,7 @@ mongoose.connect(process.env.mongoURI)
 .catch(err => console.error(err));
 
 app.post('/api/register', async(req,res) =>{
-    res.set('Access-Control-Allow-Origin', 'http://100.26.41.90:3000');
+    res.set('Access-Control-Allow-Origin', 'http://localhost:3000');
     
     try {
         const newPassword= await bcrypt.hash(req.body.pass,10)

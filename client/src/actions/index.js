@@ -16,7 +16,7 @@ export const logOut = (tipo)=>{
 
 export const fetchPuertas= () => async dispatch =>{
        
-        const response = await fetch('http://100.26.41.90:5000/api/door',{
+        const response = await fetch('http://localhost:5000/api/door',{
             method:'GET',
             headers:{
                 'Content-Type':'application/json'
@@ -30,7 +30,7 @@ export const fetchPuertas= () => async dispatch =>{
 
 export const reservarPuerta = (fecha,horario) => async dispatch =>{
 
-    await fetch('http://100.26.41.90:5000/api/reserve',{
+    await fetch('http://localhost:5000/api/reserve',{
         method:'POST',
         headers:{
             'Content-Type':'application/json'
@@ -45,7 +45,7 @@ export const reservarPuerta = (fecha,horario) => async dispatch =>{
 
 export const addInventory = (fecha,horario,aereolinea,puerta,email) => async dispatch =>{
 
-    await fetch('http://100.26.41.90:5000/api/saveres',{
+    await fetch('http://localhost:5000/api/saveres',{
         method:'POST',
         headers:{
             'Content-Type':'application/json'
@@ -61,7 +61,7 @@ export const addInventory = (fecha,horario,aereolinea,puerta,email) => async dis
 } 
 
 export const fetchInventory = (aereolinea) => async dispatch =>{
-    const response = await fetch('http://100.26.41.90:5000/api/getinv',{
+    const response = await fetch('http://localhost:5000/api/getinv',{
         method:'POST',
         headers:{
             'Content-Type':'application/json'
@@ -77,7 +77,7 @@ export const fetchInventory = (aereolinea) => async dispatch =>{
 } 
 
 export const fetchALLInventory = () => async dispatch =>{
-    const response = await fetch('http://100.26.41.90:5000/api/getAll',{
+    const response = await fetch('http://localhost:5000/api/getAll',{
         method:'GET',
         headers:{
             'Content-Type':'application/json'
