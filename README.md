@@ -2,7 +2,7 @@
 
 ## RODRIGO QUIROZ REYES & ESTEBAN MANRIQUE DE LARA SIRVENT
 
-![](Aspose.Words.0f5a274b-ecc2-4f38-8f92-6d09f1a008dd.001.png)
+![](./images/Aspose.Words.0f5a274b-ecc2-4f38-8f92-6d09f1a008dd.001.png)
 
 **Architecture Project Description and Scope**
 
@@ -69,7 +69,7 @@ Nowadays, AIFA is missing a reliable solution capable of keeping an inventory an
 
 **Business Architecture View**
 
-![](Aspose.Words.0f5a274b-ecc2-4f38-8f92-6d09f1a008dd.002.png)
+![](./images/Aspose.Words.0f5a274b-ecc2-4f38-8f92-6d09f1a008dd.002.png)
 
 1. Login portal to the solution.
    1. Airline representative portal
@@ -88,13 +88,13 @@ Nowadays, AIFA is missing a reliable solution capable of keeping an inventory an
 
 **Application/Data Architecture View**
 
-![](Aspose.Words.0f5a274b-ecc2-4f38-8f92-6d09f1a008dd.003.png)
+![](./images/Aspose.Words.0f5a274b-ecc2-4f38-8f92-6d09f1a008dd.003.png)
 
 \- The solution should be easy to maintain; Maintenance periods are TBD. React components are to be used for this precise reason
 
 **Technology Architecture View**
 
-![](Aspose.Words.0f5a274b-ecc2-4f38-8f92-6d09f1a008dd.004.png)
+![](./images/Aspose.Words.0f5a274b-ecc2-4f38-8f92-6d09f1a008dd.004.png)
 
 - **AWS WAF** (Web Application Firewall): Layer 3 and 4 protection (DNS, SMTP, Telnet, RDP, SSH y FTP). HTTP and HTTPS traffic will be filtered. Cloud-based.
 - **3 Elastic Load Balancers**: **Load Balancer 1** is an **Application Load Balancer**, while **Load Balancers 2** and **3** will be **Classic Load Balancers** for **Databases.**
