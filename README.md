@@ -212,30 +212,6 @@ The following guidelines and directives will go underway when performing any del
 - Development of this project will undergo strict scrutiny.
 - Partial deliveries (dates to be mentioned in the “Schedule” section of this document) will require special meetings between both involved parties. As their name suggests, these will serve as milestones to evaluate the advancements the project has undergone.
 
-**Architecture Project Plan and Schedule**
-
-\*Preguntarle a Legardo si son las mismas fases del Timeline que lo visto en la materia previa?
-
-\*Se requiere Gantt Chart con Function points, Costos, etc.?
-
-**Approvals**
-
-At any delivery moment, the client will have two working days to review the partial or total delivery being made by the development team. If observations are to be made, the client will follow the steps and guidelines found at the “Procedures to Solicit Scope Changes” of this document. Otherwise, the client is to sign an “Approval Document”, which will have the following structure (not limited or restricted by this example):
-
-_Mexico City, DATE_
-
-_I, CLIENT REPRESENTATIVE NAME, in representation of the client’s party in this project, accept and approve the following progress and completed steps of this project:_
-
-- _In here, a list_
-- _of modules/interfaces/deliverables_
-- _being delivered and accepted by the client_
-- _will be listed_
-
-_After the acceptance of said steps, no changes, unless they suppose an existential threat or flaw to the correct functioning of this project, will be applied to the modules/functions/requirements fulfilled present in this Approval Document._
-
-\------------------------------------------ -----------------------------------------
-_Client’s representative Signature Development team project manager Signature_
-
 **Architecture Principles**
 
 **Reuse Components at All Times:**
